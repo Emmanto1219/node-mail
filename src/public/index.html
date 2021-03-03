@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Mail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/send-email" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nombre" autofocus name="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="2" class="form-control" placeholder="Mensaje"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-block">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
